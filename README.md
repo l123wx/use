@@ -10,7 +10,7 @@ A tool for automatically importing [@l123wx/shared](https://github.com/l123wx/sh
 ## Usage
 
 ```shell
-  npx @l123wx/shared
+npx @l123wx/shared
 ```
 
 ```js
