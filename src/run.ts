@@ -4,10 +4,12 @@ import * as p from '@clack/prompts'
 import { cloneRepository } from './stages/clone-repository'
 import { updatePackageJson } from './stages/update-package-json'
 import { updatePNPMWorkYaml } from './stages/update-pnpm-workspace-yaml'
+import { updateNPMRC } from './stages/update-npmrc'
 
 export async function run() {
   await cloneRepository()
   await updatePackageJson()
+  await updateNPMRC()
   await updatePNPMWorkYaml()
 
   p.log.success(c.green(`Setup completed`))
