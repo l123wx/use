@@ -29,3 +29,4 @@ const [isLoading, run] = useLoading()
 
  - [x] 将文件移动到 package 目录下
  - [ ] ~~解决 package 在项目打包时的 tree sharking 问题，参考 [vue/scripts/build.js](https://github.com/vuejs/vue/blob/main/scripts/build.js)~~ 不存在这个问题
+ - [ ] 将这个项目和 `@l123wx/shared` 解耦，变成适用其他公共代码库的工具
