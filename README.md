@@ -24,3 +24,8 @@ const [isLoading, run] = useLoading()
 [npm-version-href]: https://npmjs.com/package/@l123wx/use
 [npm-downloads-src]: https://img.shields.io/npm/dm/@l123wx/use?style=flat&colorA=080f12&colorB=1fa669
 [npm-downloads-href]: https://npmjs.com/package/@l123wx/use
+
+## TODO
+
+ - [ ] 将文件移动到 package 目录下
+ - [ ] 解决 package 在项目打包时的 tree sharking 问题，参考 [vue/scripts/build.js](https://github.com/vuejs/vue/blob/main/scripts/build.js)
