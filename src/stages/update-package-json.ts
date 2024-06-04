@@ -16,8 +16,8 @@ export async function updatePackageJson() {
   const pkgContent = await fsp.readFile(pathPackageJSON, 'utf-8')
   const pkg: Record<string, any> = JSON.parse(pkgContent)
 
-  pkg.devDependencies ??= {}
-  pkg.devDependencies[PACKAGE_NAME] = `workspace:*`
+  pkg.dependencies ??= {}
+  pkg.dependencies[PACKAGE_NAME] = `workspace:*`
 
   await fsp.writeFile(pathPackageJSON, JSON.stringify(pkg, null, 2))
   p.log.success(c.green(`Changes wrote to package.json`))

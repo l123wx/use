@@ -11,5 +11,5 @@ export async function run() {
   await updatePNPMWorkYaml()
 
   p.log.success(c.green(`Setup completed`))
-  p.outro(`Now you can install the dependencies and use like ${c.blue('import { } from \'@l123wx/shared\'')}\n`)
+  p.outro(`Now you can install the dependencies ${c.cyan('pnpm i')} and use ${c.cyan('import { } from \'@l123wx/shared\'')}\n`)
 }
